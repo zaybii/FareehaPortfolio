@@ -204,7 +204,7 @@
         const x = s.x + mx * 25 * s.z, y = s.y + my * 25 * s.z;
         ctx.beginPath();
         ctx.arc(x, y, s.r * s.z * 1.4, 0, Math.PI * 2);
-        ctx.fillStyle = s.red ? `rgba(229,37,27,${a + 0.3})` : `rgba(243,238,231,${a})`;
+        ctx.fillStyle = s.red ? `rgba(245,197,24,${a + 0.3})` : `rgba(243,238,231,${a})`;
         ctx.fill();
       }
       raf = requestAnimationFrame(draw);
