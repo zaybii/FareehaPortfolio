@@ -249,7 +249,7 @@ em { font-family: var(--serif); font-style: italic; font-size: 1.12em; }
 .journey__pin { height: 100vh; display: flex; flex-direction: column; justify-content: center; overflow: hidden; padding: 5rem 0 3rem; }
 .journey__head { display: flex; align-items: center; gap: 2rem; padding: 0 var(--pad); }
 .journey__head .h-section { margin-bottom: 1rem; }
-.journey__laptop { width: clamp(80px, 9vw, 130px); }
+.journey__laptop { width: clamp(130px, 16vw, 230px); }
 .journey__track { position: relative; display: flex; gap: clamp(2rem, 4vw, 4rem); padding: 3rem var(--pad) 0; width: max-content; }
 .journey__line { position: absolute; left: var(--pad); right: var(--pad); top: calc(3rem + 70px); height: 1px; background: var(--line); }
 .journey__line span { display: block; height: 100%; background: var(--accent); transform-origin: left; transform: scaleX(0); }
