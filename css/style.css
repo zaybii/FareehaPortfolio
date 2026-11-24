@@ -200,7 +200,7 @@ em { font-family: var(--serif); font-style: italic; font-size: 1.12em; }
 .ransom__word img:hover { transform: rotate(var(--hr, 12deg)) scale(1.18) !important; }
 .hero__roles { grid-column: 1; margin-top: 1.6rem; font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
 .hero__roles i { color: var(--accent); font-style: normal; margin: 0 0.35rem; }
-.hero__cta { grid-column: 2; justify-self: end; align-self: end; margin-top: 2rem; font-size: 0.95rem; padding: 0.9rem 1.4rem; border: 1px solid var(--line); border-radius: 999px; transition: background 0.3s, border-color 0.3s; }
+.hero__cta { grid-column: 2; grid-row: 4; justify-self: center; align-self: start; margin-top: 2.5rem; font-size: 0.95rem; padding: 0.9rem 1.4rem; border: 1px solid var(--line); border-radius: 999px; transition: background 0.3s, border-color 0.3s; }
 .hero__cta:hover { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
 .hero__cta span { display: inline-block; }
 .hero__scroll { position: absolute !important; left: 0; right: 0; width: fit-content; margin: 0 auto; bottom: 1.5rem; display: flex; flex-direction: column; align-items: center; gap: 0.6rem; font-family: var(--hand); font-size: 1.2rem; color: var(--muted); }
@@ -504,7 +504,7 @@ em { font-family: var(--serif); font-style: italic; font-size: 1.12em; }
   .hero { grid-template-columns: 1fr; padding-top: 6rem; gap: 1.5rem; }
   .hero__portrait { grid-column: 1; grid-row: auto; width: min(62vw, 300px); margin: 1rem auto 1.5rem; order: -1; }
   .hero__title { grid-row: auto; }
-  .hero__cta { grid-column: 1; justify-self: start; }
+  .hero__cta { grid-column: 1; grid-row: auto; justify-self: start; }
   .hero__scroll { display: none; }
   .about, .expertise, .zay, .background__cols, .brand { grid-template-columns: 1fr; }
   .numbers__grid { grid-template-columns: repeat(2, 1fr); }

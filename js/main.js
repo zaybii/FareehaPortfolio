@@ -533,14 +533,13 @@
      ========================================================= */
   if (innerWidth <= 900) gsap.set('.interlude__media', { clipPath: 'ellipse(30% 16% at 50% 76%)' });
   const inter = gsap.timeline({
-    scrollTrigger: { trigger: '.interlude', pin: '.interlude__pin', start: 'top top', end: '+=140%', scrub: 1 },
+    scrollTrigger: { trigger: '.interlude', pin: '.interlude__pin', start: 'top top', end: '+=80%', scrub: 0.5 },
   });
   inter
-    .from('.interlude__text .line > span', { yPercent: 110, stagger: 0.12, duration: 0.5, ease: 'power3.out' })
-    .from('.interlude__text .art', { scale: 3, rotate: -20, color: '#f3eee7', duration: 0.4 }, 0.2)
-    .to('.interlude__media', { clipPath: 'ellipse(110% 110% at 50% 50%)', duration: 1, ease: 'power2.inOut' }, 0.5)
-    .to('.interlude__media', { '--shade': 1, duration: 0.6 }, 0.8)
-    .fromTo('.interlude__media img', { scale: 1.25 }, { scale: 1, duration: 1.5, ease: 'none' }, 0);
+    .from('.interlude__text .line > span', { yPercent: 110, stagger: 0.05, duration: 0.25, ease: 'power3.out' })
+    .from('.interlude__text .art', { color: '#f3eee7', duration: 0.3 }, 0.15)
+    .to('.interlude__media', { clipPath: 'ellipse(110% 110% at 50% 50%)', duration: 1, ease: 'power2.inOut' }, 0.3)
+    .to('.interlude__media', { '--shade': 1, duration: 0.6 }, 0.6);
 
   /* doors */
   gsap.from('.door', {
