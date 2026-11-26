@@ -234,6 +234,7 @@ em { font-family: var(--serif); font-style: italic; font-size: 1.12em; }
 .background { position: relative; padding: 6rem var(--pad) 8rem; overflow: hidden; }
 .background__lines { position: absolute; right: -10%; top: 0; width: 70%; fill: none; stroke: var(--accent); stroke-width: 1.2; opacity: 0.55; }
 .background__cols { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; position: relative; }
+.background__cols > div:last-child { margin-top: 12vw; }
 .edu { list-style: none; }
 .edu li { padding: 1.1rem 0; border-bottom: 1px solid var(--line); display: grid; gap: 0.2rem; }
 .edu b { font-weight: 500; font-size: 1.1rem; }
@@ -507,6 +508,7 @@ em { font-family: var(--serif); font-style: italic; font-size: 1.12em; }
   .hero__cta { grid-column: 1; grid-row: auto; justify-self: start; }
   .hero__scroll { display: none; }
   .about, .expertise, .zay, .background__cols, .brand { grid-template-columns: 1fr; }
+  .background__cols > div:last-child { margin-top: 0; }
   .numbers__grid { grid-template-columns: repeat(2, 1fr); }
   .doors__grid, .logos__grid, .phones, .mk-grid { grid-template-columns: repeat(2, 1fr); }
   .cm-row { grid-template-columns: 1fr 1fr; }
